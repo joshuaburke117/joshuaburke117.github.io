@@ -8,14 +8,27 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Navbar/>
-        
+        <div className="header-container">
+          <h1 className="header-text">Hi, my name is Joshua Burke,</h1>
+          <div className="image-container">
+            <Image 
+              src="/FullSizeRender.jpg" 
+              alt="profile picture" 
+              width={900} 
+              height={900} 
+              className="headerImage"
+            />
+          </div>
+        </div>
+
+
         <div className={styles.aboutBody}>
           <h1 id="about-secton">About Me</h1>
           <div className={styles.aboutContent}>
             <Image src="/FullSizeRender.jpg" alt ='profile picture' 
               width={400} height={400} className={styles.aboutImage}/>
             <div className={styles.aboutText}>
-              Hi, my name is Joshua Burke, 
+              
               i studied a bachelor of science in information technology(distinction) 
               fron university of technology Sydney. I completed this in June of 2024.
               i have recently started a Graduate Diploma of Applied Data Science from 
@@ -38,7 +51,7 @@ export default function Home() {
               your changes instantly.</li>
           </ol>
         </div>
-        <h1 id="experience-secton">Experience</h1>
+        <h1 id="experience-secton" className={styles.experienceHeading}>Experience</h1>
         <div>
           <ol>
             <li>
@@ -51,7 +64,7 @@ export default function Home() {
               your changes instantly.</li>
           </ol>
         </div>
-        <h1 id="projects-secton">Projects</h1>
+        <h1 id="projects-secton" className={styles.projectsHeading}>Projects</h1>
         <div>
           <ol>
             <li>
