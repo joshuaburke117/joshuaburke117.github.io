@@ -33,8 +33,8 @@ export default function Navbar(){
     }
     return (
         <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden}`}>
-        <button onClick={scrollToTop} className={styles.scrollButton}>Home</button>
         <ul className={styles.navLinks}>
+            <li><button onClick={scrollToTop} className={styles.scrollButton}>Home</button></li>
             <li><Link href="#about-secton">About</Link></li>
             <li><Link href="#skills-secton">Skills</Link></li>
             <li><Link href="#experience-secton">Experience</Link></li>
