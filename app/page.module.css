@@ -180,17 +180,32 @@ a.secondary {
   max-width: 800px;
   margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-
   display: flex;
-  flex-direction: column; /* Stack heading and content vertically */
+  flex-direction: column;
   align-items: center;
   gap: 32px;
+  width: 100%; /* Ensure it takes up full width */
+  overflow: auto; /* Ensure content can scroll if needed */
+}
+
+@media (max-width: 600px) {
+  .aboutBody {
+    padding: 16px; /* Adjust padding for mobile */
+  }
 }
 
 .aboutContent {
   display: flex; /* Side-by-side */
   align-items: center;
   gap: 32px;
+}
+
+@media (max-width: 600px) {
+  /* On mobile, stack the image and text */
+  .aboutContent {
+    flex-direction: column; /* Stack the items vertically */
+    gap: 16px; /* Adjust the gap between the image and text */
+  }
 }
 
 .aboutImage {
