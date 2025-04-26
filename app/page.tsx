@@ -2,21 +2,22 @@
 import Image from 'next/image';
 import styles from "./page.module.css";
 import Navbar from "./navbar/navbar";
+import FadeHeaderText from './headerText/fadeHeaderText';
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <Navbar/>
-        <div className="header-container">
-          <h1 className="header-text">Hi, my name is Joshua Burke,</h1>
-          <div className="image-container">
+        <div className={styles.headerContainer}>
+        <FadeHeaderText />
+          <div className={styles.headerImageWrapper}>
             <Image 
               src="/FullSizeRender.jpg" 
               alt="profile picture" 
-              width={900} 
-              height={900} 
-              className="headerImage"
+              fill
+              className={styles.headerImage}
+              priority
             />
           </div>
         </div>
