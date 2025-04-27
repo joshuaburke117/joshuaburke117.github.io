@@ -219,13 +219,6 @@ a.secondary {
   line-height: 1.5;
 }
 
-
-.skillsHeading{
-  display: flex;
-  align-items: center;     /* vertical center (if needed) */
-  justify-content: center; /* horizontal center */
-}
-
 .experienceHeading{
   display: flex;
   align-items: center;     /* vertical center (if needed) */
@@ -264,5 +257,49 @@ a.secondary {
   animation: fadeIn 1.5s ease-out forwards;
 }
 
+.skillsHeading{
+  display: flex;
+  align-items: center;     /* vertical center (if needed) */
+  justify-content: center; /* horizontal center */
+}
 
+.skillSection{
+  display: flex; /* Side-by-side */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+  gap: 32px;
+  
+}
 
+.skill{
+  background-color: #292626;
+  border: 1px solid #292626;
+  border-radius: 16px;
+  padding: 32px;
+  color: #ccc;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo{
+  width: 25px; /* or whatever size */
+  height: 25px;
+  object-fit: cover;
+  color: #ccc;
+}
+
+.socialMediaButtons{
+  display: flex;
+  padding: 32px;
+  gap: 32px;
+  align-items: center;
+}

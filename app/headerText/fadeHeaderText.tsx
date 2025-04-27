@@ -25,7 +25,7 @@ export default function FadeHeaderText() {
       className={styles.headerText}
       style={{ opacity }}
     >
-      Hi, my name is Joshua Burke,
+      Hi, my name is Joshua Burke
     </h1>
   );
 }
