@@ -37,6 +37,7 @@ export default function Home() {
               monash university.
               i really been enjoying learning about data and data analytics, 
               i also love painting warhammer miniatures.
+              if you want to read more about me click <Link href="/moreAboutMe">here.</Link>
             </div>
           </div>
           <div className={styles.socialMediaButtons}>
