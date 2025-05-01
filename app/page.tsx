@@ -37,7 +37,7 @@ export default function Home() {
               monash university.
               i really been enjoying learning about data and data analytics, 
               i also love painting warhammer miniatures.
-              if you want to read more about me click <Link href="/moreAboutMe">here.</Link>
+              if you want to read more about me click <Link href="/moreAboutMe"><u>here.</u></Link>
             </div>
           </div>
           <div className={styles.socialMediaButtons}>
@@ -80,6 +80,11 @@ export default function Home() {
         <div>
           work in progress
         </div>
+        <footer>
+          <div>
+              built by Joshua Burke using next.js and hosted on github 
+          </div>
+        </footer>
       </main>
     </div>
   );
