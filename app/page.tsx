@@ -74,7 +74,35 @@ export default function Home() {
        
         <h1 id="experience-secton" className={styles.experienceHeading}>Experience</h1>
         <div>
-          work in progress
+          <div>
+            <h3>Freelance</h3>
+            <h4>Audio Technician (Jan 2016 - present)</h4>
+            <ul>
+              <li>Contracted to companies such as: JPJ Audio, Eighth Day Sound Australia, 
+                Ministry of Tech, CrossTalk Technical
+              Services</li>
+              <li>Prepared, set up, packed down, and de-prepared a wide range of professional audio equipment</li>
+              <li>Mixed FOH, Monitors, and broadcast for a wide range of events</li>
+              <li>Create, troubleshoot and maintain networks for a range of events including festivals, 
+                conferences, and live broadcast
+              events</li>
+              <li>Managed and assisted in installations and creation of simple networks for 
+                churches and schools around the Greater
+              Sydney region</li>
+              <li>Often working in and managing large teams to produce events</li>
+              <li>Notable Events included; UFC at Marvel Stadium, Hillsong Conference at Qudos Bank Arena, 
+                Salesforce Conference
+              at ICC, Australia Day and New Years Eve Celebration Broadcast</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Amazon Web Services</h3>
+            <h4>Network Development Engineer Intern (Nov 2024- Feb 2023)</h4>
+            <ul>
+              <li>Worked in the Direct Connect team, learnt about Amazon Web Services</li>
+              <li>Worked in GitHub, Python, BGP and Network Automation</li>
+            </ul>
+          </div>
         </div>
         <h1 id="projects-secton" className={styles.projectsHeading}>Projects</h1>
         <div>

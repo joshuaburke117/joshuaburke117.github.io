@@ -25,6 +25,13 @@ export default function Navbar(){
         };
       }, []);
 
+    const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+    }
+
     const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
     function scrollToTop() {
@@ -35,10 +42,10 @@ export default function Navbar(){
         <nav className={`${styles.navbar} ${isVisible ? styles.visible : styles.hidden}`}>
         <ul className={styles.navLinks}>
             <li><button onClick={scrollToTop} className={styles.scrollButton}>Home</button></li>
-            <li><Link href="#about-secton">About</Link></li>
-            <li><Link href="#skills-secton">Skills</Link></li>
-            <li><Link href="#experience-secton">Experience</Link></li>
-            <li><Link href="#projects-secton">Projects</Link></li>
+            <li><button onClick={() => scrollToSection("about-secton")} className={styles.scrollButton}>About</button></li>
+            <li><button onClick={() => scrollToSection("skills-secton")} className={styles.scrollButton}>Skills</button></li>
+            <li><button onClick={() => scrollToSection("experience-secton")} className={styles.scrollButton}>Experience</button></li>
+            <li><button onClick={() => scrollToSection("projects-secton")} className={styles.scrollButton}>Projects</button></li>
         </ul>
         </nav>
 
